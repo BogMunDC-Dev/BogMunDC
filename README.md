@@ -5,7 +5,7 @@ BogMunDC es una base de datos creada y mantenido por estudiantes de distintos co
 en MUN pueda necesitar para movilizarse y estructurar sus horarios inicialmente dentro de la ciudad de Bogotá. 
 
 ## Etapas de desarrollo
-- [ ] https://github.com/BogMunDC-Dev/BogMunDC/issues/3
+- [ ] [Etapa 1: Principios](https://github.com/BogMunDC-Dev/BogMunDC/issues/3)
 
 ## Avances del desarrollo
 
