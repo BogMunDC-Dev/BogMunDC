@@ -34,6 +34,36 @@ footer {
   text-size-adjust: 2;
 }
 
+.btn-sm, .btn-outline-secondary, .btn-primary  {
+  color: white;
+  outline: white;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-bg: rgb(15, 133, 201);
+  --bs-btn-border-color: rgb(255, 255, 255);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: rgb(20, 150, 226);
+  --bs-btn-hover-border-color: blue;
+  --bs-btn-focus-shadow-rgb: white;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: rgb(22, 118, 173);
+}
+
+.btn-secondary {
+  color: white;
+  outline: white;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-bg: rgb(6, 96, 129);
+  --bs-btn-border-color: rgb(255, 255, 255);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: rgb(6, 96, 110);
+  --bs-btn-hover-border-color: blue;
+  --bs-btn-focus-shadow-rgb: white;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: rgb(6, 96, 100);
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
