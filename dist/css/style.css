@@ -1,7 +1,7 @@
 .navbar-custom,
 #navbarHeader {
   color: #000000 !important;
-  background-color: #bba31c !important;
+  background-color: #e4c40d !important;
   color: rgb(255, 255, 255) !important;
 }
 h4 {
@@ -39,14 +39,14 @@ footer {
   outline: white;
   --bs-btn-font-weight: 600;
   --bs-btn-color: rgb(255, 255, 255);
-  --bs-btn-bg: rgb(15, 133, 201);
-  --bs-btn-border-color: rgb(255, 255, 255);
-  --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: rgb(20, 150, 226);
-  --bs-btn-hover-border-color: blue;
-  --bs-btn-focus-shadow-rgb: white;
-  --bs-btn-active-color: white;
-  --bs-btn-active-bg: rgb(22, 118, 173);
+  --bs-btn-bg:  rgb(9, 60, 90);
+  --bs-btn-border-color: rgb(125, 181, 233);
+  --bs-btn-hover-color: rgba(255, 255, 255, 0.795);
+  --bs-btn-hover-bg: rgb(12, 98, 148);
+  --bs-btn-hover-border-color: rgb(79, 159, 179);
+  --bs-btn-focus-shadow-rgb: rgb(179, 172, 172);
+  --bs-btn-active-color: rgb(202, 221, 245);
+  --bs-btn-active-bg: rgb(8, 133, 206);
 }
 
 .btn-secondary {
@@ -54,14 +54,14 @@ footer {
   outline: white;
   --bs-btn-font-weight: 600;
   --bs-btn-color: rgb(255, 255, 255);
-  --bs-btn-bg: rgb(6, 96, 129);
-  --bs-btn-border-color: rgb(255, 255, 255);
-  --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: rgb(6, 96, 110);
-  --bs-btn-hover-border-color: blue;
-  --bs-btn-focus-shadow-rgb: white;
-  --bs-btn-active-color: white;
-  --bs-btn-active-bg: rgb(6, 96, 100);
+  --bs-btn-bg:  rgb(9, 60, 90);
+  --bs-btn-border-color: rgb(125, 181, 233);
+  --bs-btn-hover-color: rgba(255, 255, 255, 0.795);
+  --bs-btn-hover-bg: rgb(12, 98, 148);
+  --bs-btn-hover-border-color: rgb(79, 159, 179);
+  --bs-btn-focus-shadow-rgb: rgb(179, 172, 172);
+  --bs-btn-active-color: rgb(202, 221, 245);
+  --bs-btn-active-bg: rgb(8, 133, 206);
 }
 
 .bd-placeholder-img {

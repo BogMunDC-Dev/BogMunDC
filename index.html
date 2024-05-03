@@ -99,8 +99,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <!-- TODO: Cambiar el color de los botones cuando el cursor esta encima -->
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -125,7 +125,36 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
+                                            View
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#editModal">
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Estructura estandar para un modelo -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
+                                alt="imagen prueba">
+                            <div class="card-body">
+                                <h5 class="card-text">
+                                    <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
+                                </h5>
+                                <p class="card-text">
+                                    Una breve descripción hablando sobre el modelo.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -151,7 +180,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -177,7 +207,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -203,7 +234,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -229,7 +261,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -255,7 +288,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -281,33 +315,8 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <small class="text-body-secondary">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Estructura estandar para un modelo -->
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
-                            <div class="card-body">
-                                <h5 class="card-text">
-                                    <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
-                                </h5>
-                                <p class="card-text">
-                                    Una breve descripción hablando sobre el modelo.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -334,29 +343,20 @@
                 </div>
                 <div class="modal-body">
                     <main class="form-signin w-100 m-auto">
-                        <form>
+                        <form method="post">
                             <img class="mb-4" src="img/favicon.ico" alt="" width="72" height="57">
                             <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
 
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Correo Electronico</label>
+                                <input type="text" class="form-control" id="floatingInput" name="username">
+                                <label for="floatingInput" for="username">Nombre de usuario</label>
                             </div>
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword"
+                                <input name="password" type="password" class="form-control" id="floatingPassword"
                                     placeholder="Password">
                                 <label for="floatingPassword">Contraseña</label>
                             </div>
-
-                            <div class="form-check text-start my-3">
-                                <input class="form-check-input" type="checkbox" value="remember-me"
-                                    id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Remember me
-                                </label>
-                            </div>
-                            <button class="btn btn-primary w-100 py-2" type="submit">Iniciar
+                            <button class="btn btn-primary w-100 py-2" type="submit" value="Login">Iniciar
                                 Sesión</button>
                         </form>
                     </main>
@@ -367,7 +367,6 @@
             </div>
         </div>
     </div>
-
     <!--Sign Up Modal-->
     <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -378,16 +377,16 @@
                 </div>
                 <div class="modal-body">
                     <main class="form-signin w-100 m-auto">
-                        <form>
+                        <form method="post">
                             <img class="mb-4" src="img/favicon.ico" alt="" width="72" height="57">
                             <h3 class="h3 mb-3 fw-normal">Regristra una Nueva Cuenta</h3>
                             <div class="form-floating">
-                                <input name="nombre" type="username" class="form-control" id="floatingInput"
+                                <input name="username" type="text" class="form-control" id="floatingInput"
                                     placeholder="username" required>
                                 <label for="floatingInput">Tu nombre de usuario</label>
                                 <br>
                                 <div class="form-floating">
-                                    <input name="correo" type="email" class="form-control" id="floatingInput"
+                                    <input name="email" type="email" class="form-control" id="floatingInput"
                                         placeholder="name@example.com" required>
                                     <label for="floatingInput">Correo Electronico</label>
                                 </div>
@@ -411,16 +410,43 @@
                                         placeholder="token" required>
                                     <label for="floatingInput">Token de Autenticación</label>
                                 </div>
-                                <div class="checkbox mb-3">
-                                    <label>
-                                        <input type="checkbox" value="remember-me"> Remember me
-                                    </label>
-                                </div>
                                 <button class="btn btn-primary w-100 py-2" type="submit">
                                     Registrate
                                 </button>
                         </form>
                     </main>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--View Post Modal-->
+    <div class="modal fade" id="ViewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mas detalles del modelo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
+                            alt="imagen prueba">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
+                            </h5>
+                            <p class="card-text">
+                                Una breve descripción hablando sobre el modelo.
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
