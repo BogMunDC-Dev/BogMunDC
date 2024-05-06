@@ -88,34 +88,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
-                            <div class="card-body">
-                                <h5 class="card-text">
-                                    <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
-                                </h5>
-                                <p class="card-text">
-                                    Una breve descripción hablando sobre el modelo.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                                            data-bs-target="#ViewModal">
-                                            View
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <small class="text-body-secondary">9 mins</small>
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -130,7 +134,7 @@
                                             View
                                         </button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            data-bs-toggle="modal" data-bs-target="#editModal">
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -142,8 +146,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -157,7 +191,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -169,8 +204,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -184,7 +249,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -196,8 +262,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -211,7 +307,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -223,8 +320,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -238,7 +365,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -250,8 +378,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -265,7 +423,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -277,8 +436,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -292,7 +481,8 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -304,8 +494,38 @@
                     <!-- Estructura estandar para un modelo -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
-                                alt="imagen prueba">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-text">
                                     <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
@@ -319,7 +539,66 @@
                                             data-bs-target="#ViewModal">
                                             View
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Estructura estandar para un modelo -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button id="slide" type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button id="carousel-btn" class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">
+                                    <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
+                                </h5>
+                                <p class="card-text">
+                                    Una breve descripción hablando sobre el modelo.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#ViewModal">
+                                            View
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#EditModal">
                                             Edit
                                         </button>
                                     </div>
@@ -435,6 +714,38 @@
                     <div class="card shadow-sm">
                         <img src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
                             alt="imagen prueba">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
+                            </h5>
+                            <p class="card-text">
+                                Una breve descripción hablando sobre el modelo.
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Edit Post Modal-->
+    <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editando...</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img id="imagen-prueba" src="img/Imagen_ONU_Prueba.png" class="bd-placeholder-img card-img-top"
+                            alt="imagen prueba">
+                        <label for="imagen-prueba">Deseas Cambiar la imagen del modelo?</label>
                         <div class="card-body">
                             <h5 class="card-text">
                                 <strong>[Nombre del Modelo] [Fecha de modelo]</strong>

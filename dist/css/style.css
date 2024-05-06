@@ -1,10 +1,9 @@
 .navbar-custom,
 #navbarHeader {
-  color: #000000 !important;
   background-color: #e4c40d !important;
   color: rgb(255, 255, 255) !important;
 }
-h4 {
+h4, .text-body-secondary {
   color: rgb(255, 255, 255) !important;
 }
 
@@ -12,6 +11,13 @@ main, .modal-content {
   background-color: #174292 !important;
 }
 
+#slide {
+  background-color: #ffffffff;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color:white;
+}
 
 
 .album,
