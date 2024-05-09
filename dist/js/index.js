@@ -1,12 +1,3 @@
-let contador = 0;
-document.getElementById("demo").innerHTML = contador + "min(s)";
-setInterval(function () {
-  contador++;
-  console.log("El contador ahora es: " + contador);
-  document.getElementById("demo").innerHTML = contador + "min(s)";
-}, 60000); // 60000 milisegundos equivalen a 1 minuto
-
-
 editBtnY = document.getElementById('editBtn1')
 editBtnN = document.getElementById('editBtn0')
 editCardBody = document.getElementById('editCardBody')
