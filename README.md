@@ -7,7 +7,3 @@ BogMunDC es una base de datos creada y mantenido por estudiantes de distintos co
 ## Etapas de desarrollo:
 
 - [ ] [Etapa 1: Principios](https://github.com/BogMunDC-Dev/BogMunDC/issues/3)
-
-## Avances del desarrollo:
-
-[Link a la pagina web de prueba](https://bogmundc-dev.github.io/BogMunDC/)
