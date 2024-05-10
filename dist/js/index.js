@@ -11,12 +11,12 @@ function mostrarPosts() {
             <div class="card shadow-sm">
                 <div id="carouselExampleIndicators${i}" class="carousel slide">
                     <div class="carousel-indicators">
-                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators1"
+                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators${i}"
                             data-bs-slide-to="0" class="active" aria-current="true"
                             aria-label="Slide 1"></button>
-                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators1"
+                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators${i}"
                             data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators1"
+                        <button id="slide" type="button" data-bs-target="#carouselExampleIndicators${i}"
                             data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
@@ -31,12 +31,12 @@ function mostrarPosts() {
                         </div>
                     </div>
                     <button id="carousel-btn" class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        data-bs-target="#carouselExampleIndicators${i}" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button id="carousel-btn" class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        data-bs-target="#carouselExampleIndicators${i}" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
