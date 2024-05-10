@@ -84,9 +84,16 @@
 
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card shadow-sm container" id="contenedor-numero-posts">
+                    <label> Cantidad de post que quieres ver: </label>
+                    <input type="number" id="number-post" min="1" value="1">
+                    <button onclick="mostrarPosts()" type="button" class="enterBtn btn btn-sm btn-outline-secondary">
+                        Enter
+                    </button>
+                </div>
+                <div class="contenedor-posts row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="list-post">
                     <!-- Estructura estandar para un modelo -->
-                    <div class="col">
+                    <div class="col" id="post-model">
                         <div class="card shadow-sm">
                             <div id="carouselExampleIndicators1" class="carousel slide">
                                 <div class="carousel-indicators">

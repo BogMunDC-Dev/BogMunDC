@@ -3,22 +3,55 @@
   background-color: #e4c40d !important;
   color: rgb(255, 255, 255) !important;
 }
-h4, .text-body-secondary {
+h4,
+.text-body-secondary {
   color: rgb(255, 255, 255) !important;
 }
 
-main, .modal-content {
+main,
+.modal-content {
   background-color: #174292 !important;
+}
+
+#contenedor-numero-posts {
+  width: 280px;
+  padding: 5px;
+  border: 1px solid auto;
+  border-radius: 7px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.enterBtn {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 7px;
+}
+
+#number-post {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 #slide {
   background-color: #ffffffff;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  background-color:white;
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: white;
+  border-radius: 7px;
 }
-
 
 .album,
 footer {
@@ -40,12 +73,14 @@ footer {
   text-size-adjust: 2;
 }
 
-.btn-sm, .btn-outline-secondary, .btn-primary  {
+.btn-sm,
+.btn-outline-secondary,
+.btn-primary {
   color: white;
   outline: white;
   --bs-btn-font-weight: 600;
   --bs-btn-color: rgb(255, 255, 255);
-  --bs-btn-bg:  rgb(9, 60, 90);
+  --bs-btn-bg: rgb(9, 60, 90);
   --bs-btn-border-color: rgb(125, 181, 233);
   --bs-btn-hover-color: rgba(255, 255, 255, 0.795);
   --bs-btn-hover-bg: rgb(12, 98, 148);
@@ -60,7 +95,7 @@ footer {
   outline: white;
   --bs-btn-font-weight: 600;
   --bs-btn-color: rgb(255, 255, 255);
-  --bs-btn-bg:  rgb(9, 60, 90);
+  --bs-btn-bg: rgb(9, 60, 90);
   --bs-btn-border-color: rgb(125, 181, 233);
   --bs-btn-hover-color: rgba(255, 255, 255, 0.795);
   --bs-btn-hover-bg: rgb(12, 98, 148);
