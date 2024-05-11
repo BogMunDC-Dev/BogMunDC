@@ -620,11 +620,11 @@
     </main>
 
     <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar Sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -654,11 +654,11 @@
         </div>
     </div>
     <!--Sign Up Modal-->
-    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
+                    <h1 class="modal-title fs-5" id="signUpModalLabel">Registrate</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -710,58 +710,143 @@
     </div>
 
     <!--View Post Modal-->
-    <div class="modal fade" id="ViewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal fade" id="ViewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mas detalles del modelo</h1>
+                    <h1 class="modal-title fs-5" id="viewModalLabel">Mas detalles del modelo</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div id="viewModalCarouselIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button id="slide" type="button" data-bs-target="#viewModalCarouselIndicators"
-                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                    aria-label="Slide 1"></button>
-                                <button id="slide" type="button" data-bs-target="#viewModalCarouselIndicators"
-                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button id="slide" type="button" data-bs-target="#viewModalCarouselIndicators"
-                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                <div class="modal-body">
+                    <div class="col">
+                        <main class="w-100 m-auto">
+                            <div class="card shadow-sm">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="viewModalCarouselIndicators" class="carousel slide">
+                                            <div class="carousel-indicators">
+                                                <button id="slide" type="button"
+                                                    data-bs-target="#viewModalCarouselIndicators" data-bs-slide-to="0"
+                                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button id="slide" type="button"
+                                                    data-bs-target="#viewModalCarouselIndicators" data-bs-slide-to="1"
+                                                    aria-label="Slide 2"></button>
+                                                <button id="slide" type="button"
+                                                    data-bs-target="#viewModalCarouselIndicators" data-bs-slide-to="2"
+                                                    aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button id="carousel-btn" class="carousel-control-prev" type="button"
+                                                data-bs-target="#viewModalCarouselIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button id="carousel-btn" class="carousel-control-next" type="button"
+                                                data-bs-target="#viewModalCarouselIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="card-text">
+                                            <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
+                                        </h3>
+                                        <h5 class="card-text">
+                                            <i>Detalles varios:</i>
+                                        </h5>
+                                        <div class="row">
+                                            <div class="col detalles-varios">
+                                                <p class="card-text">
+                                                    Staff:
+                                                <ul>
+                                                    <li>nombre persona 1</li>
+                                                    <li>nombre persona 2</li>
+                                                    <li>nombre persona 3</li>
+                                                    <li>nombre persona 4</li>
+                                                    <li>nombre persona 5</li>
+                                                </ul>
+                                                </p>
+                                                <p class="card-text">
+                                                    Dirección del Modelo
+                                                </p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="card-text">
+                                                    Comites:
+                                                <div class="row">
+                                                    <div class="col">
+                                                        Nombre Comite 1
+                                                        <ul>
+                                                            <li>Presidente 1</li>
+                                                            <li>Presidente 2</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        Nombre Comite 1
+                                                        <ul>
+                                                            <li>Presidente 1</li>
+                                                            <li>Presidente 2</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        Nombre Comite 1
+                                                        <ul>
+                                                            <li>Presidente 1</li>
+                                                            <li>Presidente 2</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        Nombre Comite 1
+                                                        <ul>
+                                                            <li>Presidente 1</li>
+                                                            <li>Presidente 2</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/Imagen_ONU_Prueba.png" class="d-block w-100" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Una breve descripción hablando sobre el modelo
+                                    <p>
+                                        Lorem ipsum dolor sit amet te kasd et ad et eros labore accusam takimata diam sit
+                                        vel.
+                                        Dolor in no. Ut et eos est amet accusam rebum.
+                                        Dolore amet lobortis eos vero amet sea amet rebum et id vel elit ipsum magna dolor
+                                        eos.
+                                        Dolor dolor stet sed ut et diam no et velit
+                                        hendrerit dolores ullamcorper accusam ex gubergren. Nulla facilisis eos nulla
+                                        nostrud
+                                        voluptua dolore esse tincidunt sadipscing erat
+                                        consetetur voluptua tation et dolore eros molestie sit. Est dolor at sea duo eos
+                                        ipsum
+                                        facilisis dolor magna nonumy consetetur et dolor lorem.
+                                        Sit duis velit consetetur ex nulla dolor invidunt dolor consequat zzril stet. Ut
+                                        lorem
+                                        amet elitr invidunt erat ut possim zzril.
+                                        Diam eos sanctus vulputate sed magna ut. Erat et illum magna lorem stet dolor vero
+                                        dolore accusam et ipsum invidunt takimata accusam lorem eum eos ipsum.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-body-secondary">9 mins</small>
+                                    </div>
+                                    </p>
                                 </div>
                             </div>
-                            <button id="carousel-btn" class="carousel-control-prev" type="button"
-                                data-bs-target="#viewModalCarouselIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button id="carousel-btn" class="carousel-control-next" type="button"
-                                data-bs-target="#viewModalCarouselIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-text">
-                                <strong>[Nombre del Modelo] [Fecha de modelo]</strong>
-                            </h5>
-                            <p class="card-text">
-                                Una breve descripción hablando sobre el modelo.
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                            </p>
-                        </div>
+                        </main>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -771,11 +856,11 @@
         </div>
     </div>
     <!--Edit Post Modal-->
-    <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editando...</h1>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Editando...</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="col">
