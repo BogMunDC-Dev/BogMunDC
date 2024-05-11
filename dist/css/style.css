@@ -186,3 +186,16 @@ body {
 .detalles-varios {
   margin-right: -10rem;
 }
+
+.detalles-basicos {
+  margin-top: 0.5rem;
+}
+
+.descripcion-modelo {
+  margin-top: -1.7rem;
+  margin-bottom: -1rem;
+}
+
+.tiempo-post{
+  margin-top: -0.7rem;
+}
