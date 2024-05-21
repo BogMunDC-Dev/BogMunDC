@@ -79,7 +79,7 @@
                 </div>
             </section>
             <div class="album py-5 bg-body-tertiary">
-                <div class="container">
+                <div class="container" id="main-container">
                     <div class="card shadow-sm container" id="contenedor-numero-posts">
                         <label> Cantidad de post que quieres ver: </label>
                         <input type="number" id="number-post" min="1" value="1">
@@ -625,7 +625,7 @@
                     <div class="modal-body">
                         <main class="form-signin w-100 m-auto">
                             <form method="post">
-                                <img class="mb-4" src="img/favicon.ico" alt="" width="72" height="57">
+                                <img id="imagen-bog" class="mb-4" src="img/favicon.ico" alt="" width="35%" height="35%">
                                 <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="floatingInput" name="username">
@@ -658,7 +658,7 @@
                     <div class="modal-body">
                         <main class="form-signin w-100 m-auto">
                             <form method="post">
-                                <img class="mb-4" src="img/favicon.ico" alt="" width="72" height="57">
+                                <img id="imagen-bog" class="mb-4" src="img/favicon.ico" alt="" width="35%" height="35%">
                                 <h3 class="h3 mb-3 fw-normal">Regristra una Nueva Cuenta</h3>
                                 <div class="form-floating">
                                     <input name="username" type="text" class="form-control" id="floatingInput"
@@ -684,12 +684,12 @@
                                         </select>
                                         <label for="floatingInput">Genero</label>
                                     </div>
-                                    <br>
                                     <div class="form-floating">
                                         <input name="Token" type="token" class="form-control" id="floatingInput"
                                             placeholder="token" required>
                                         <label for="floatingInput">Token de Autenticación</label>
                                     </div>
+                                    <br>
                                     <button class="btn btn-primary w-100 py-2" type="submit">
                                         Registrate
                                     </button>
@@ -929,7 +929,7 @@
                     <a href="#">Vuelve al inicio</a>
                 </p>
                 <p class="mb-1">
-                    Esta página está basada en &copy; <a href="https://getbootstrap.com/">Bootstrap.</a>
+                    Desarrollada por el equipo de <a href="https://github.com/BogMunDC-Dev"> BogMunD.C.</a> usando &copy;<a href="https://getbootstrap.com/">Bootstrap</a>
                 </p>
             </div>
         </footer>
