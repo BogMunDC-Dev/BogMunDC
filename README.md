@@ -6,7 +6,7 @@ BogMunDC es una base de datos creada y mantenido por estudiantes de distintos co
 
 ## Etapas de desarrollo:
 
-- [  ] [Etapa 1: Principios](https://github.com/BogMunDC-Dev/BogMunDC/issues/3)
+- [ ] [Etapa 1: Principios](https://github.com/BogMunDC-Dev/BogMunDC/issues/3)
 
 
 ### Ultimos cambios:
@@ -17,7 +17,7 @@ BogMunDC es una base de datos creada y mantenido por estudiantes de distintos co
 
 
 ### Lista de proximas mejoras a la pagina:
-- [ x ] Pasar un JSON a un .js para la base de datos, y luego usar `index.js` para manipular las plantillas
+- [x] Pasar un JSON a un .js para la base de datos, y luego usar `index.js` para manipular las plantillas
 - [ ] Detectar si el dispositivo que esta viendo la pagina tiene el tamaño minimo para que la intervaz no se rompa, y si no llega al minimo, cambiarla a otro diseño
 - Mejorar la interfaz del contenedor `contenedor-numero-posts` para que no ocupe mucho espacio
-- [ x ] Quitar todos los botones relacionados a editar algun post, o de iniciar sesion/registrarse
+- [x] Quitar todos los botones relacionados a editar algun post, o de iniciar sesion/registrarse
