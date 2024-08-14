@@ -1,3 +1,71 @@
+const db = {
+    "modelos": [
+      {
+        "nombre": "RMUN XIX",
+        "institucion": "Colegio Rochester",
+        "Fecha": "29 y 30 de Enero",
+        "linkInstagram": "https://www.instagram.com/rochester.mun/",
+        "locacion": "Vereda Fusca, Chia, Cundinamarca, 250008"
+      },
+      {
+        "nombre": "CNGMUN XLII",
+        "institucion": "Colegio Nueva Granada",
+        "Fecha": "8, 9 y 10 de Febrero",
+        "linkInstagram": "https://www.instagram.com/cngmun2024/",
+        "locacion": "Cra 2 Este #70-20, Bogota"
+      },
+      {
+        "nombre": "MUNEB 2024",
+        "institucion": "Universidad del Bosque",
+        "Fecha": "15, 16, 17 y  18 de Febrero",
+        "linkInstagram": "https://www.instagram.com/stories/muneb_org/",
+        "locacion": "Ak. 9 #131a-2, Bogota"
+      },
+      {
+        "nombre": "CSVMUN III",
+        "institucion": "Colegio San Viator",
+        "Fecha": "22 y 23 de Febrero",
+        "linkInstagram": "https://www.instagram.com/csvmun_/",
+        "locacion": "Autopista Nte. #209-51, Suba, Bogota"
+      },
+      {
+        "nombre": "TVSMUN XVII",
+        "institucion": "Colegio The Victoria School",
+        "Fecha": "23, 24 y 25 de Febrero",
+        "linkInstagram": "https://www.instagram.com/tvsmun/",
+        "locacion": "Calle 215 No. 50-60, Suba, Bogota"
+      },
+      {
+        "nombre": "CLNMUN VI",
+        "institucion": "Colegio Los Nogales",
+        "Fecha": "8, 9 y 10 de Marzo",
+        "linkInstagram": "https://www.instagram.com/p/Ctjo3t3OQbz/",
+        "locacion": "Cl. 202 #5650, Bogota"
+      },
+      {
+        "nombre": "SACMUN XVIII",
+        "institucion": "Colegio San Carlos",
+        "Fecha": "21, 22 y 23 de Marzo",
+        "linkInstagram": "https://www.instagram.com/sacmuncsc/",
+        "locacion": "Cl. 192 #9 - 45, Bogota"
+      },
+      {
+        "nombre": "CUMUN",
+        "institucion": "Colegio Cumbres",
+        "Fecha": "10, 11 y 12 de Abril",
+        "linkInstagram": "https://www.instagram.com/cumun__/",
+        "locacion": "Autonor. Km. 6 Vereda Yerbabuena, Chia"
+      },
+      {
+        "nombre": "CSMUN X",
+        "institucion": "Colegio Bilingue Clermont",
+        "Fecha": "10, 11 y 12 de Abril",
+        "linkInstagram": "https://www.instagram.com/csmun_/",
+        "locacion": "Tv. 80 #213a-17, Bogota"
+      }
+    ]
+};
+
 function mostrarPosts() {
     const numeroPosts = document.getElementById('number-post').value;
     const contenedorPosts = document.querySelector('.contenedor-posts');
@@ -42,12 +110,11 @@ function mostrarPosts() {
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-text"><strong>[Nombre del Modelo] [Fecha de modelo]</strong></h5>
+                    <h5 class="card-text"><strong>${db.modelos[i].nombre} ${db.modelos[i].Fecha}</strong></h5>
                     <p class="card-text"> Una breve descripción hablando sobre el modelo.</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ViewModal">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#EditModal">Edit</button>
                         </div>
                         <small class="text-body-secondary">9 mins</small>
                     </div>
@@ -58,6 +125,10 @@ function mostrarPosts() {
         contenedorPosts.appendChild(post);
     }
 }
+
+
+
+/*
 const editCardBody = document.getElementById("editCardBody");
 const editBtnY = document.getElementById("editBtn1");
 function editarPosts() {
@@ -204,3 +275,4 @@ function salirEditMode() {
         </div>
     </p>`
 }
+*/
