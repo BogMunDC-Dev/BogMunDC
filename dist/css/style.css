@@ -1,6 +1,6 @@
 .navbar-custom,
 #navbarHeader {
-  background-color: #e4c40d !important;
+  background-color: #FFCD00 !important;
   color: rgb(255, 255, 255) !important;
 }
 h4,
@@ -8,9 +8,13 @@ h4,
   color: rgb(255, 255, 255) !important;
 }
 
+#direccion, #linkIns {
+  margin-bottom: 10px;
+}
+
 main,
 .modal-content {
-  background-color: #174292 !important;
+  background-color: #003087 !important;
 }
 
 #contenedor-numero-posts {
@@ -55,7 +59,7 @@ main,
 
 .album,
 footer {
-  background-color: rgb(189, 25, 25) !important;
+  background-color: #C8102E !important;
 }
 
 .card {
