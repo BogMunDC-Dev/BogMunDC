@@ -84,12 +84,27 @@
         <div class="album py-5 bg-body-tertiary">
             <div class="container" id="main-container">
                 <!-- Codigo para mostrar post-->
-                <div class="card shadow-sm container" id="contenedor-numero-posts">
-                    <label> Cantidad de post que quieres ver: </label>
-                    <input type="number" id="number-post" min="3" value="3" max="38">
-                    <button onclick="mostrarPosts()" type="button" class="enterBtn btn btn-sm btn-outline-secondary">
-                        Enter
-                    </button>
+                <button class="btn" id="numeroPostModalBtn" type="button" data-bs-toggle="modal" data-bs-target="#contenedor-numero-postsModal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="modal fade" id="contenedor-numero-postsModal" tabindex="-1" aria-labelledby="NumeroPostModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="loginModalLabel">Filtros de busqueda</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="shadow-sm container w-100 card" id="contenedor-numero-posts">
+                                    <label> Cantidad de post que quieres ver: </label>
+                                    <input type="number" id="number-post" min="3" value="3" max="38">
+                                    <button onclick="mostrarPosts()" type="button" class="enterBtn btn btn-sm btn-outline-secondary">
+                                        Enter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contenedor-posts row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="list-post">
                     <script>

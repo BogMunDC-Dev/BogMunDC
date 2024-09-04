@@ -3,6 +3,13 @@
   background-color: #FFCD00 !important;
   color: rgb(255, 255, 255) !important;
 }
+
+#numeroPostModalBtn {
+  --bs-btn-bg: #d6ac03;
+  --bs-btn-hover-bg: #a58401;
+  margin-bottom: 1%;
+}
+
 h4,
 .text-body-secondary {
   color: rgb(255, 255, 255) !important;
@@ -18,7 +25,7 @@ main,
 }
 
 #contenedor-numero-posts {
-  width: 280px;
+  width: 1%;
   padding: 5px;
   border: 1px solid auto;
   border-radius: 7px;
@@ -84,10 +91,10 @@ footer {
   outline: white;
   --bs-btn-font-weight: 600;
   --bs-btn-color: rgb(255, 255, 255);
-  --bs-btn-bg: rgb(9, 60, 90);
+  --bs-btn-bg: #C8102E;
   --bs-btn-border-color: rgb(125, 181, 233);
   --bs-btn-hover-color: rgba(255, 255, 255, 0.795);
-  --bs-btn-hover-bg: rgb(12, 98, 148);
+  --bs-btn-hover-bg: #b10f2a;
   --bs-btn-hover-border-color: rgb(79, 159, 179);
   --bs-btn-focus-shadow-rgb: rgb(179, 172, 172);
   --bs-btn-active-color: rgb(202, 221, 245);
