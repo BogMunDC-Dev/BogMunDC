@@ -816,11 +816,11 @@ function mostrarPosts() {
             </button>
         </div>
         <div class="card-body">
-            <h5 class="card-text"><strong>${db.modelos[i].institucion}</strong></h5>
-            <h4 class="card-text">${db.modelos[i].nombre}</h4>
-            <h5 class="card-text"><i>Fecha: ${db.modelos[i].Fecha}</i></h5>
-            <p class="card-text" id="direccion">Dirección: ${db.modelos[i].locacion} </p>
-            <p class="card-text" id="linkIns"><a href="${db.modelos[i].linkInstagram}">Instagram </a></p>
+            <h5 class="card-text"><strong>${db.modelosAll[i].institucion}</strong></h5>
+            <h4 class="card-text">${db.modelosAll[i].nombre}</h4>
+            <h5 class="card-text"><i>Fecha: ${db.modelosAll[i].Fecha}</i></h5>
+            <p class="card-text" id="direccion">Dirección: ${db.modelosAll[i].locacion} </p>
+            <p class="card-text" id="linkIns"><a href="${db.modelosAll[i].linkInstagram}">Instagram </a></p>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                     <!--- <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ViewModal">Ver mas...</button> --->
