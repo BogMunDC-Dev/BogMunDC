@@ -835,7 +835,7 @@ function mostrarPosts() {
     }
 }
 
-export default {db, mostrarPosts};
+export default {mostrarPosts};
 
 /*
 const editCardBody = document.getElementById("editCardBody");

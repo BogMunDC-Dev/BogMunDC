@@ -6,12 +6,12 @@ import '../css/style.css';
 function Footer() {
     return (
         <>
-            <footer class="text-body-secondary py-5">
-                <div class="container">
-                    <p class="float-end mb-1">
+            <footer className="text-body-secondary py-5">
+                <div className="container">
+                    <p className="float-end mb-1">
                         <a href="#">Vuelve al inicio</a>
                     </p>
-                    <p class="mb-1">
+                    <p className="mb-1">
                         Desarrollada por el equipo de <a href="https://github.com/BogMunDC-Dev"> BogMunD.C.</a> usando &copy;<a
                             href="https://getbootstrap.com/">Bootstrap</a>
                     </p>
