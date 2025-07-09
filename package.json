@@ -1,6 +1,7 @@
 {
   "name": "bogmundc-react-vite",
   "private": true,
+  "homepage": "https://www.bogmundc.org",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
