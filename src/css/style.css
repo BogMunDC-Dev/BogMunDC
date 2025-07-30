@@ -1,18 +1,22 @@
 .navbar-custom,
-#navbarHeader {
+#navbarHeader, #navbarcontainer, #navbar-brand, #navbarContent {
   background-color: #FFCD00 !important;
-  color: rgb(255, 255, 255) !important;
+  color: #ffffff !important;
+}
+
+#navbarBTN {
+  --bs-btn-bg: #FFCD00 !important;
+  --bs-btn-hover-bg: #8a700a !important;
 }
 
 #numeroPostModalBtn {
-  --bs-btn-bg: #ffcc00 !important;
-  --bs-btn-hover-bg: #a58401 !important;
+  --bs-btn-bg: #003087 !important;
+  --bs-btn-hover-bg: #064ed4 !important;
   margin-bottom: 1% !important;
 }
 
-h4,
-.text-body-secondary {
-  color: rgb(255, 255, 255) !important;
+#bienvenida{
+  color: white !important;
 }
 
 #direccion, #linkIns {
@@ -21,7 +25,7 @@ h4,
 
 main,
 .modal-content {
-  background-color: #003087 !important;
+  background-color: #003087!important;
 }
 
 #contenedor-numero-posts {
@@ -67,10 +71,16 @@ main,
 .album,
 footer {
   background-color: #C8102E !important;
+  
 }
 
+#linkDEV, #linkBootstrap, #linkInicio, #linkIns {
+  color: #FFCD00 !important;
+}
+
+
 .card {
-  background-color: #0d337a;
+  background-color: #003087;
 }
 
 .btn-outline-secondary {

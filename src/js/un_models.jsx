@@ -2,12 +2,42 @@ import React from 'react';
 import '../Bootstrap/css/bootstrap.min.css';
 import '../Bootstrap/js/bootstrap.bundle.min.js';
 import '../css/style.css';
+
 import MostrarModelos from './mostrarPost.jsx';
+import db from './modelos.js';
+
 
 function UnModels() {
-    const [cantidad, setCantidad] = React.useState(6);
+    const [cantidad, setCantidad] = React.useState(9);
     const [mostrar, setMostrar] = React.useState(true); // Mostrar modelos al renderizar
-    const [anio, setAnio] = React.useState(''); // Mostrar todos los años por defecto
+    const [anio, setAnio] = React.useState('All'); // Mostrar todos los años por defecto
+
+    // Determinar el nombre de la propiedad en db según el año
+    const getDbKey = (anio) => {
+        if (anio === '2025') return 'modelos2025';
+        if (anio === '2024') return 'modelos2024';
+        if (anio === 'Legacy') return 'modelosLegacy';
+    };
+
+    // Calcular el máximo dinámicamente
+    const maxCantidad = React.useMemo(() => {
+        if (anio === 'All') {
+            let total = 0;
+            if (db.modelos2024) {
+                total += Array.isArray(db.modelos2024) ? db.modelos2024.length : Object.keys(db.modelos2024).length;
+            }
+            if (db.modelos2025) {
+                total += Array.isArray(db.modelos2025) ? db.modelos2025.length : Object.keys(db.modelos2025).length;
+            }
+            if (db.modelosLegacy) {
+                total += Array.isArray(db.modelosLegacy) ? db.modelosLegacy.length : Object.keys(db.modelosLegacy).length;
+            }
+            return total > 0 ? total : 51;
+        } else {
+            const key = getDbKey(anio);
+            return db[key] ? Object.keys(db[key]).length : 51;
+        }
+    }, [anio]);
 
     const handleInputChange = (e) => {
         setCantidad(Number(e.target.value));
@@ -19,6 +49,7 @@ function UnModels() {
 
     const handleAnioChange = (e) => {
         setAnio(e.target.value);
+        setCantidad(9); // Reiniciar cantidad al cambiar año
     };
 
     return (
@@ -28,7 +59,7 @@ function UnModels() {
                     <div className="row py-lg-5">
                         <div className="col-lg-6 col-md-8 mx-auto">
                             <h1 className="fw-light" style={{ color: "white" }}>Bienvenido/a a Bogotá Mun D.C.</h1>
-                            <p className="lead text-body-secondary">
+                            <p className="lead text-body-secondary" id='bienvenida'>
                                 Bienvenido/a a la base de datos sobre Modelos de Naciones Unidas en Bogotá (próximamente en toda
                                 Colombia)
                             </p>
@@ -46,23 +77,23 @@ function UnModels() {
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <h1 className="modal-title fs-5" id="loginModalLabel">Filtros de busqueda</h1>
-                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h1 className="modal-title fs-5" id="loginModalLabel" style={{ color: "white" }}>Filtros de busqueda</h1>
+                                        <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
                                         <div className="shadow-sm container w-100 card" id="contenedor-numero-posts">
-                                            <label> Cantidad de post que quieres ver: </label>
+                                            <label style={{ color: "white" }}> Cantidad de post que quieres ver: </label>
                                             <input
                                                 type="number"
                                                 id="number-post"
-                                                min="3"
+                                                min="6"
                                                 value={cantidad}
-                                                max="51"
+                                                max={maxCantidad}
                                                 onChange={handleInputChange}
                                             />
                                         </div>
                                         <div className="shadow-sm container w-100 card mt-3" id="contenedor-fecha-posts">
-                                            <label> Selecciona el año que quieras ver: </label>
+                                            <label style={{ color: "white" }}> Selecciona el año que quieras ver: </label>
                                             <select
                                                 id="anio-post"
                                                 value={anio}
@@ -73,7 +104,7 @@ function UnModels() {
                                                 <option value="2025">2025</option>
                                                 <option value="2024">2024</option>
                                                 <option value="Legacy">Anterior</option>
-                                                {/* Agrega más años si es necesario */}
+                                                {/* Agrega más años cuando sea necesario */}
                                             </select>
                                         </div>
                                         <button
