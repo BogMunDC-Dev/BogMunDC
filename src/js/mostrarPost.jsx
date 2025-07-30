@@ -3,6 +3,8 @@ import '../Bootstrap/css/bootstrap.min.css';
 import '../css/style.css';
 import db from './modelos.js';
 
+// TODO: agregar un boton para ver mas detalles del modelo (imagenes, staff academico, presidentes, comites, o algun dato curioso)
+
 // Función para obtener los modelos según el año
 function obtenerModelosPorAnio(anio) {
     if (!anio) {

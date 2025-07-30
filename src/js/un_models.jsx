@@ -6,7 +6,8 @@ import '../css/style.css';
 import MostrarModelos from './mostrarPost.jsx';
 import db from './modelos.js';
 
-
+// TODO: refactorizar el codigo del filtro de post para que deje elegir la ciudad tambien
+// TODO: hacer un componente para el filtro de post para que el codigo sea mas limpio
 function UnModels() {
     const [cantidad, setCantidad] = React.useState(9);
     const [mostrar, setMostrar] = React.useState(true); // Mostrar modelos al renderizar
@@ -73,6 +74,7 @@ function UnModels() {
                                 <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
                             </svg>
                         </button>
+
                         <div className="modal fade" id="contenedor-numero-postsModal" tabIndex="-1" aria-labelledby="NumeroPostModalLabel" aria-hidden="true">
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div className="modal-content">
