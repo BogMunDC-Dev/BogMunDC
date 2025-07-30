@@ -19,7 +19,7 @@ function Navbar() {
                         <div className="row" id="navbarContent">
                             <div className="col-sm-8 col-md-7 py-4">
                                 <h4 style={{ color: "#5c4b09ff" }}>Acerca de nosotros</h4>
-                                <p style={{ color: "#5c4b09ff !important" }}>El objetivo general de BOGMUNDC es dar toda la información que
+                                <p style={{ color: "#5c4b09ff" }}>El objetivo general de BOGMUNDC es dar toda la información que
                                     un/a delegad@ en MUN pueda necesitar para movilizarse y estructurar sus horarios,
                                     inicialmente dentro de la ciudad de Bogotá, sin embargo, está dentro del plan salir de la
                                     capital Colombiana y formar delegaciones en más ciudades del país.

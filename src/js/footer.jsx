@@ -11,7 +11,7 @@ function Footer() {
                     <p className="float-end mb-1">
                         <a href="#" id='linkInicio'>Vuelve al inicio</a>
                     </p>
-                    <p className="mb-1">
+                    <p className="mb-1" style={{ color: "white" }}>
                         Desarrollada por el equipo de <a href="https://github.com/BogMunDC-Dev" id='linkDEV'> BogMunD.C.</a> usando &copy;<a
                             href="https://getbootstrap.com/" id='linkBootstrap'>Bootstrap</a>
                     </p>

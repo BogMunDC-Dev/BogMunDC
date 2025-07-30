@@ -96,13 +96,13 @@ function MostrarModelos({ cantidad = 9, anio = null }) {
                             </div>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="img/Imagen_ONU_Prueba.svg" className="d-block w-100 h-100" alt="..." />
+                                    <img src="img/Imagen_ONU_Prueba.png" className="d-block w-100 h-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="img/Imagen_ONU_Prueba.svg" className="d-block w-100" alt="..." />
+                                    <img src="img/Imagen_ONU_Prueba.png" className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="img/Imagen_ONU_Prueba.svg" className="d-block w-100" alt="..." />
+                                    <img src="img/Imagen_ONU_Prueba.png" className="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button
