@@ -93,7 +93,7 @@ function MostrarModelos({ cantidad = 9, anio = null, ciudad = 'Bogota' }) {
                 const imagenes = getImagenesModelo(modelo);
                 return (
                     <div className="post col" id="post-model" key={i}>
-                        <div className="card shadow-sm" style={{ backgroundColor: ciudadColor[modelo.ciudad] || '#f8f9fa' }}>
+                        <div className="card shadow-sm" style={{ backgroundColor: ciudadColor[modelo.ciudad] || '#f8f9fa' }} id={`card-${modelo.nombre}`}>
                             <div id={`carouselExampleIndicators${i}`} className="carousel slide">
                                 <div className="carousel-indicators">
                                     {imagenes.map((img, idx) => (
@@ -146,11 +146,11 @@ function MostrarModelos({ cantidad = 9, anio = null, ciudad = 'Bogota' }) {
                                     <strong>{modelo.institucion}</strong>
                                 </h5>
                                 <h4 className="card-text" style={{ color: "white" }}>{modelo.nombre}</h4>
-                                <h5 className="card-text" style={{ color: "white" }}>
+                                <h5 className="card-text" style={{ color: "white"}}>
                                     <i>Fecha: {modelo.Fecha}</i>
                                 </h5>
-                                <p className="card-text" id="direccion" style={{ color: "white" }}>
-                                    Dirección: {modelo.locacion}
+                                <p className="card-text" id="direccion" style={{ color: "white", fontSize: "97%"}}>
+                                    Dirección: <br /> {modelo.locacion}
                                 </p>
                                 <p className="card-text" id="linkIns">
                                     <a href={modelo.linkInstagram} style={{ color: "rgb(252, 209, 22)" }} target="_blank" rel="noopener noreferrer">Instagram </a>

@@ -46,10 +46,6 @@ main,
   margin-bottom: 10px;
 }
 
-.card {
-  border-radius: 7px;
-}
-
 #number-post {
   width: 80px;
   padding: 5px;
@@ -64,8 +60,11 @@ main,
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: white;
+  background-color: #FFCD00;
   border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .album,
@@ -81,6 +80,25 @@ footer {
 
 .card {
   background-color: #003087;
+}
+
+.card-body {
+  flex: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Distribuye el contenido verticalmente */
+}
+
+.carousel-item {
+  height: 450px; /* igual al max-height de la imagen */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 500px;
+  max-height: 450px;
 }
 
 .btn-outline-secondary {
