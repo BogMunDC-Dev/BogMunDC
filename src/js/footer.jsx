@@ -15,6 +15,9 @@ function Footer() {
                         Desarrollada por el equipo de <a href="https://github.com/BogMunDC-Dev" id='linkDEV'> BogMunD.C.</a> usando &copy;<a
                             href="https://getbootstrap.com/" id='linkBootstrap'>Bootstrap</a>
                     </p>
+                    <p className="mb-1" style={{ color: "white" }}>
+                    ¿Tienes comentarios o encontraste un problema? <a href="https://github.com/BogMunDC-Dev/BogMunDC/issues/new" target="_blank" rel="noopener noreferrer" id="linkFeedback">Haz tu feedback aquí</a>
+                    </p>
                 </div>
             </footer>
         </>

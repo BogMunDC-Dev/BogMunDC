@@ -28,14 +28,14 @@ function Navbar() {
                             <div className="col-sm-4 offset-md-1 py-4">
                                 <h4 style={{ color: "#5c4b09ff" }}>Contáctanos</h4>
                                 <ul className="list-unstyled">
-                                    <li><a href="https://twitter.com/bogmundc" target="_blank" style={{ color: "#5c4b09ff" }}>Nuestro
+                                    <li><a href="https://twitter.com/bogmundc" target="_blank" rel="noopener noreferrer" style={{ color: "#5c4b09ff" }}>Nuestro
                                         Twitter</a></li>
-                                    <li><a href="https://www.instagram.com/bogmundc/" target="_blank" style={{ color: "#5c4b09ff" }}>Nuestro
+                                    <li><a href="https://www.instagram.com/bogmundc/" target="_blank" rel="noopener noreferrer" style={{ color: "#5c4b09ff" }}>Nuestro
                                         Instagram</a></li>
-                                    <li><a href="https://www.whatsapp.com/channel/0029VaIRAZ26RGJJNPEPca24" target="_blank"
+                                    <li><a href="https://www.whatsapp.com/channel/0029VaIRAZ26RGJJNPEPca24" target="_blank" rel="noopener noreferrer"
                                         style={{ color: "#5c4b09ff" }}>¡Únete a nuestro grupo de WhatsApp!</a></li>
                                     <li><a href="https://l.instagram.com/?u=https%3A%2F%2Fforms.gle%2FTCM8C2WKdbZkCiKC6&e=AT3qn5sgdgS0BhxQzOKS0LA3UgMgXvdF9N4c6QKe4hbHoNk4RFEc6Cwr1BlUt-CG52uKsW8_yd2VJIMuyjTVFykeG6fdG_b1GYfuIvM2gFO7teUx6uzFIw"
-                                        target="_blank" style={{ color: "#5c4b09ff" }}>
+                                        target="_blank" rel="noopener noreferrer" style={{ color: "#5c4b09ff" }}>
                                         ¿Quieres ser parte de nuestro equipo?
                                     </a></li>
                                 </ul>

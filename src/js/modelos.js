@@ -26,7 +26,7 @@ const db = {
                 nombre: "CRBMUN XI",
                 institucion: "Colegio Cristo Rey",
                 Fecha: "21 y 22 de Septiembre",
-                linkInstagram: "https://www.instagram.com/_nesmun_/",
+                linkInstagram: "https://www.instagram.com/crbmun2023/",
                 locacion: "AV. El Polo, Cl. 201 #67-12, Suba, Bogotá",
             },
             5: {
@@ -499,7 +499,7 @@ const db = {
                 nombre: "MUNECA XXV",
                 institucion: "Colegio Cristiano El Camino Academy",
                 Fecha: "7, 8 y 9 de Mayo",
-                linkInstagram: "https://www.instagram.com/muneca.official/",
+                linkInstagram: "https://www.instagram.com/muneca_viii/",
                 locacion: "Cl. 221 # 52 -02, Suba"
             },
             21: {
@@ -518,9 +518,9 @@ const db = {
             },
             23: {
                 nombre: "SPMUN II",
-                institucion: "Colegio Santa Pilar",
+                institucion: "Colegio San Patricio",
                 Fecha: "21, 22 y 23 de Mayo",
-                linkInstagram: "https://www.instagram.com/spmun_ii/",
+                linkInstagram: "https://www.instagram.com/cspmun_1/",
                 locacion: "Cra. 80 # 17a - 02, Bogotá"
             },
             24: {
@@ -534,14 +534,14 @@ const db = {
                 nombre: "FEMMUN VI",
                 institucion: "Colegio Gimnasio Femenino",
                 Fecha: "29, 30 y 31 de Mayo",
-                linkInstagram: "https://www.instagram.com/femmunigfem/",
+                linkInstagram: "https://www.instagram.com/femmungimfem/",
                 locacion: "Cl. 119 #4 - 40"
             },
             26: {
                 nombre: "URANOMUN V",
-                institucion: "Colegio Liceo Urania",
-                Fecha: "12, 13 y 14 de Junio",
-                linkInstagram: "https://www.instagram.com/uranomun/",
+                institucion: "Colegio Integración Moderna",
+                Fecha: "5 y 6 de Junio",
+                linkInstagram: "https://www.instagram.com/urano.num/",
                 locacion: "Cra. 4 #71a - 41, Bogotá"
             },
             27: {
@@ -606,12 +606,61 @@ const db = {
         modelos2024: {
         },
         modelos2025: {
+            1: {
+                nombre: "CBMUN VII",
+                institucion: "Colegio Bolivar",
+                Fecha: null,
+                linkInstagram: "https://www.instagram.com/colegiobolivarmun/",
+                locacion: "Carrera 122 #5-21, Santiago de Cali (Universidad ICESI)",
+            },
         },
     },
     modelosMedellin: {
         modelos2024: {
+            1: {
+                nombre: "VMUN XV",
+                institucion: "Colegio San José de las Vegas.",
+                Fecha: "23, 24, 25 y 26 de Septiembre",
+                linkInstagram: "https://www.instagram.com/vmuners/",
+                locacion: "Carrera 48, Av. Las Vegas #7 Sur - 52, Medellín, Antioquia",
+            },
+            2: {
+                nombre: "CCMMUN IV",
+                institucion: "Colegio Calasanz Medellín.",
+                Fecha: "26 y 27 de Septiembre",
+                linkInstagram: "https://www.instagram.com/ccm.mun/",
+                locacion: "Carrera 82 #48A-120, Calasanz, Medellín",
+            },
+            3: {
+                nombre: "PJBMUN",
+                institucion: "Instituto Salesiano Pedro Justo Berrío",
+                Fecha: "2 y 3 de Octubre",
+                linkInstagram: "https://www.instagram.com/pjbmun/",
+                locacion: "Cra. 87A #32A-101, Medellín, Belén, Medellín, Antioquia",
+            },
+            4: {
+                nombre: "CPMMUN III",
+                institucion: "Colegio Paula Montal",
+                Fecha: "3 y 4 de Octubre ",
+                linkInstagram: "https://www.instagram.com/cpmmun/",
+                locacion: "Cra. 44 # 43 - 36, Angeles, Itagüi, Antioquia",
+            },
+            5: {
+                nombre: "CCBMUN XIV",
+                institucion: "Colegio Colombo Britanico de Envigado",
+                Fecha: "22, 23, 24 y 25 de Octubre",
+                linkInstagram: "https://www.instagram.com/ccbmunxiv/",
+                locacion: "Tv. 29 Sur #32b-97, Zona 2, Envigado, Antioquia",
+            },
         },
         modelos2025: {
+            1: {
+                nombre: "COSMUN",
+                institucion: "The Colombus School",
+                Fecha: "4, 5, 6 y 7 de Marzo",
+                linkInstagram: "https://www.instagram.com/cosmunnews/",
+                locacion: "Alto de Las Palmas Km 16, Envigado, Antioquia",
+            },
         },
     },
     modelosBarranquilla: {
@@ -627,6 +676,4 @@ const db = {
         },
     },
 };
-// TODO: agregar los modelos de Medellin, Cali, Barranquilla y Cartagena
-// TODO: hacer un objeto con cada ciudad con sus respectivos modelos
 export default db;
