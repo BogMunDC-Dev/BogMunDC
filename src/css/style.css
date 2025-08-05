@@ -67,13 +67,14 @@ main,
   justify-content: center;
 }
 
+
 .album,
 footer {
   background-color: #C8102E !important;
   
 }
 
-#linkDEV, #linkBootstrap, #linkInicio, #linkIns, #linkFeedback {
+#linkDEV, #linkBootstrap, #linkInicio, #linkIns, #linkFeedback, #linkDoc {
   color: #FFCD00 !important;
 }
 
